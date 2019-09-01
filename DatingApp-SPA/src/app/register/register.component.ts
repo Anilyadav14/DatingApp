@@ -18,7 +18,7 @@ model: any = {};
     this.authService.register(this.model).subscribe(() => {
       this.alertify.success('Registered successfully');
     }, error => {
-      this.alertify.eror(error);
+      this.alertify.error(error);
     });
   }
 

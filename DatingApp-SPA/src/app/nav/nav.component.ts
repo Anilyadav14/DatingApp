@@ -21,7 +21,7 @@ model: any = {};
     this.authService.login(this.model).subscribe(next => {
       this.alertify.success('Logged in Successfully');
     }, error => {
-      this.alertify.eror(error);
+      this.alertify.error(error);
     }, () => {
       this.router.navigate(['/members']);
     });
